@@ -4,39 +4,134 @@
     <meta charset="UTF-8">
     <title>Sit On Chair Project</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-<header>
+
+<!--header-->
+
+
+<header class="header">
         <nav class="nav container">
-            <a href="">sit <span>on</span> chair</a>
+            <a class="nav__link" href="">sit <span class="header__span">on</span> chair</a>
             <ul class="nav__main">
                 <li class="nav__main__list__item">
-                    <a href="">o firmie</a>
+                    <a class="nav__link" href="">o firmie</a>
+
+                    <!-- dropdown -->
+
                     <ul class="nav__dropdown">
-                        <li><a href="">Aktualności</a></li>
-                        <li><a href="">Nasz team</a></li>
-                        <li><a href="">Historia</a></li>
+                        <li><a class="nav__link" href="">Aktualności</a></li>
+                        <li><a class="nav__link" href="">Nasz team</a></li>
+                        <li><a class="nav__link" href="">Historia</a></li>
                     </ul>
+
+                    <!-- end of dropdown -->
                 </li>
                 <li class="nav__main__list__item">
-                    <a href="">galeria</a>
+                    <a class="nav__link" href="">galeria</a>
                 </li>
                 <li class="nav__main__list__item">
-                    <a href="">kontakt</a>
+                    <a class="nav__link" href="">kontakt</a>
                 </li>
             </ul>
         </nav>
 </header>
+
+
+<!-- end of header -->
+
+<!-- slider -->
+
+<section class="slider__container">
 <section class="slider container">
-    <figure>
-        <img src="images/black_chair.png" alt="">
+    <figure class="slider__image__container">
+        <img class="slider__image" src="images/black_chair.png" alt="">
     </figure>
-    <article>
-        <h1>Sit <span>On</span> Your <span>Chair</span></h1>
-        <button type="button">Zobacz więcej</button>
+    <article class="slider__article">
+        <h1 class="slider__heading">Sit <span class="slider__span">On</span> Your <span>Chair</span></h1>
+        <p class="slider__description">Candy canes gummi bears marzipan sweet roll apple pie. Jelly beans halvah chocolate cake danish candy canes. Cake bonbon carrot cake cake gummi bears bear claw marzipan dessert gingerbread. Gingerbread marzipan candy canes macaroon carrot cake. Candy canes bear claw tootsie roll cheesecake caramels wafer muffin cheesecake. </p>
+        <a class="slider__link" href="">Zobacz więcej</a>
     </article>
 </section>
+</section>
+
+<!-- end of slider -->
+
+<!-- main content -->
+
+<section class="main-section container">
+    <article class="main-section__article1">
+            <h2 class="main-section__heading">Chair <span class="main-section__span">clair</span></h2>
+    </article>
+
+    <article class="main-section__article2">
+            <h2 class="main-section__heading">Chair <span class="main-section__span"> margarita</span></h2>
+    </article>
+
+    <article class="main-section__article3">
+        <h2 class="main-section__heading">Find all</h2>
+        <p class="main-section__description">Gummies toffee bear claw tootsie roll lollipop marzipan gingerbread jelly-o. Sweet cupcake marshmallow cupcake donut cotton candy candy canes. Pudding candy canes cookie brownie ice cream cupcake bonbon wafer topping. Gingerbread gummi bears jujubes pie. Danish cookie tiramisu brownie. </p>
+    </article>
+</section>
+
+<!-- end of main content -->
+
+<!-- price list -->
+<section class="price-list__container">
+<section class="price-list container">
+    <h2>cennik</h2>
+
+    <!-- start of price list articles -->
+
+    <div class="price-list__articles">
+
+        <article class="price-list__article">
+            <h2>basic plan</h2>
+            <div class="price-list__price">
+                <p>85<sup>99</sup></p>
+                <p>pln/msc</p>
+            </div>
+                <div class="price-list__description">
+                <p1>zakup towaru + dowoz</p1>
+                <p1>serwis</p1>
+                <a class="price-list__link" href="">dołącz</a>
+            </div>
+        </article>
+
+        <article class="price-list__article">
+            <h2>basic plan</h2>
+            <div class="price-list__price">
+                <p>85<sup>99</sup></p>
+                <p>pln/msc</p>
+            </div>
+            <p1>zakup towaru + dowoz</p1>
+            <p1>serwis</p1>
+            <p1>zakup towaru + dowoz</p1>
+            <a class="price-list__link" href="">dołącz</a>
+        </article>
+
+        <article class="price-list__article">
+            <h2>basic plan</h2>
+            <div class="price-list__price">
+                <p>85<sup>99</sup></p>
+                <p>pln/msc</p>
+            </div>
+            <p1>zakup towaru + dowoz</p1>
+            <p1>serwis</p1>
+            <p1>zakup towaru + dowoz</p1>
+            <p1>zakup towaru + dowoz</p1>
+            <a class="price-list__link" href="">dołącz</a>
+        </article>
+
+    </div>
+
+    <!-- end of price list articles -->
+
+</section>
+</section>
+
+<!-- end of price list -->
+
 </body>
 </html>
