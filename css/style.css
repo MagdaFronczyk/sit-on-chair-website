@@ -489,3 +489,67 @@ body {
   font-weight: 700;
   padding-top: 5px; /* czy da się ładniej obliczyć? próbowałam calc(50%-25px) */
 }
+
+.footer__container {
+  width: 100%;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__copyright__statemnet {
+  color: #757575;
+}
+
+.footer__media {
+  display: flex;
+  /* justify-content: space-between; dlaczego nie działa */
+  align-items: center;
+}
+
+.fa-pinterest {
+  font-size: 2rem;
+  padding: 5px;
+  color: #cb2027;
+}
+
+.fa-vimeo {
+  font-size: 2rem;
+  padding: 5px;
+  color: #55acee;
+}
+
+.fa-twitter-square {
+  font-size: 2rem;
+  padding: 5px;
+  color: #55acee;
+}
+
+.fa-flickr {
+  font-size: 2rem;
+  padding: 5px;
+  color: #ec519d;
+}
+
+.footer__logo {
+  color: #757575;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__logo__span {
+  font-weight: 700;
+}
