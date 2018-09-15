@@ -247,17 +247,20 @@ body {
     justify-content: space-between;
     margin-bottom: 10px;
     margin-top: 10px;
+    height: 300px;
 }
 
 .main-section__article1 {
     padding: 5px;
-    flex-basis: calc(33% - 30px);
+    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
     background-image: url("../images/box1_img.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin: 10px;
+    height: 200px;
 }
 
 .main-section__heading {
@@ -268,19 +271,23 @@ body {
 
 .main-section__article2 {
     padding: 5px;
-    flex-basis: 33.3%;
+    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
     background-image: url("../images/box2_img.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin: 10px;
+    height: 200px;
 }
 
 .main-section__article3 {
-    padding: 10px;
-    flex-basis: 33.3%;
+    padding: 5px;
     border: 1px solid lightgrey;
+    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    margin: 10px;
+    height: 200px;
 }
 
 .main-section__description{
@@ -304,31 +311,50 @@ body {
 .price-list__articles {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
 }
 
 .price-list__article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border: 2px solid #c1c1c1;
-    flex-basis: 33.3%;
-    margin: 5px;
-    height: 400px;
+    flex-basis: calc(33.3% - 20px); /* czy dobrze obliczone? */
+    margin: 10px;
+    height: 550px;
+    padding-top: 20px;
+    background-color: #F9F9F9;
+}
+
+.price-list__article::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+    position: absolute;
+    top: -15px;
+}
+
+.price-list__article::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
 }
 
 .price-list__container {
     background-color: #f1f0f1;
     width: 100%;
-}
-
-.price-list {
-    height: 500px;
-}
-
-.price-list h2 {
-    padding: 10px;
+    height: 700px;
 }
 
 .price-list__price {
@@ -336,12 +362,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
+    height: 160px;
+    width: 160px;
     background-color: white;
     border-radius: 50%;
     border: 2px solid #c1c1c1;
-    flex-basis: 50%;
+    /*flex-basis: 50%;*/
+    color: #c1c1c1;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .price-list__description {
@@ -350,4 +379,63 @@ body {
     align-items: center;
     justify-content: center;
     flex-basis: 50%;
+    padding-top: 10px;
+}
+
+.price-list__heading {
+    margin: 20px;
+    text-transform: uppercase;
+    padding: 30px 5px 5px 5px;
+}
+
+.price-list__heading::after {
+    content: "";
+    background-color: #00c4a2;
+    display: block;
+    width: calc(33.3% - 20px);
+    height: 5px;
+}
+
+.price-list__article__heading {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #00c4a2;
+}
+
+.price-list__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.price-list__description__option {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.price-list__link {
+    margin-top: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #00c4a2;
+    border-radius: 10px;
+    width: 70%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.price-list__description__option:nth-child(2n) {
+    background-color: #f1f0f1;
+    width: 100%;
+    text-align: center;
+}
+
+.price-list__description__option:nth-child(2n+1) {
+    background-color: #e3e3e3;
+    width: 100%;
+    text-align: center;
 }
