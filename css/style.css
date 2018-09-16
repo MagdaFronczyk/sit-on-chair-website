@@ -77,7 +77,10 @@
 }
 
 body {
-  font-family: "ralewayregular", "ralewayblack";
+  font-family: "ralewayregular", "ralewayblack", "ralewaysemibold_italic",
+    "ralewaysemibold", "ralewayregular", "ralewaymedium_italic",
+    "ralewayextralight_italic", "ralewayextralight", "ralewayextrabold",
+    "ralewayblack_italic";
 }
 
 .content {
@@ -128,6 +131,14 @@ body {
   color: white;
   font-weight: 900;
 }
+
+.nav__link__logo {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
 .nav__main__list__item {
   list-style-type: none;
   padding-left: 10px;
@@ -198,6 +209,7 @@ body {
   padding: 10px;
   color: white;
   font-size: 2rem;
+  margin: 0 auto;
 }
 
 .slider__article {
@@ -229,7 +241,8 @@ body {
 }
 
 .main-section__article1 {
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
   background-image: url("../images/box1_img.jpg");
   background-size: cover;
@@ -248,7 +261,8 @@ body {
 }
 
 .main-section__article2 {
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
   background-image: url("../images/box2_img.jpg");
   background-size: cover;
@@ -289,8 +303,9 @@ body {
 .price-list__articles {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* margin: 10px; */
   position: relative;
 }
 
@@ -345,7 +360,6 @@ body {
   background-color: white;
   border-radius: 50%;
   border: 2px solid #c1c1c1;
-  /*flex-basis: 50%;*/
   color: #c1c1c1;
   font-size: 2rem;
   font-weight: 700;
@@ -361,9 +375,10 @@ body {
 }
 
 .price-list__heading {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  padding: 30px 5px 5px 5px;
+  padding: 30px 5px 5px 10px;
 }
 
 .price-list__heading::after {
@@ -388,7 +403,7 @@ body {
 }
 
 .price-list__description__option {
-  padding: 10px;
+  padding: 10px 70px 10px 70px;
   font-size: 1.1rem;
 }
 
@@ -429,13 +444,13 @@ body {
 }
 
 .form__parts {
-  flex-basis: 60%;
-  margin: 10px;
+  flex-basis: calc(60% - 10px); /*czy dobrze obliczone*/
+  margin: 5px;
 }
 
 .form__agreement {
-  flex-basis: 40%;
-  margin: 10px;
+  flex-basis: calc(40% - 10px); /*czy dobrze obliczone*/
+  margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -469,7 +484,7 @@ body {
 }
 
 .form__agreement__statement {
-  padding: 5px;
+  padding: 5px 5px 0 5px;
   color: #757575;
 }
 
@@ -488,6 +503,18 @@ body {
   font-size: 2rem;
   font-weight: 700;
   padding-top: 5px; /* czy da się ładniej obliczyć? próbowałam calc(50%-25px) */
+}
+
+.form__agreement__agreement__img {
+  float: left;
+}
+
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .footer__container {
