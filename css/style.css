@@ -1,582 +1,636 @@
 @font-face {
-  font-family: "ralewaysemibold_italic";
-  src: url("../fonts/raleway-semibolditalic-webfont.woff2") format("woff2"),
+    font-family: "ralewaysemibold_italic";
+    src: url("../fonts/raleway-semibolditalic-webfont.woff2") format("woff2"),
     url("../fonts/raleway-semibolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewaysemibold";
-  src: url("../fonts/raleway-semibold-webfont.woff2") format("woff2"),
+    font-family: "ralewaysemibold";
+    src: url("../fonts/raleway-semibold-webfont.woff2") format("woff2"),
     url("../fonts/raleway-semibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewayregular";
-  src: url("../fonts/raleway-regular-webfont.woff2") format("woff2"),
+    font-family: "ralewayregular";
+    src: url("../fonts/raleway-regular-webfont.woff2") format("woff2"),
     url("../fonts/raleway-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewaymedium_italic";
-  src: url("../fonts/raleway-mediumitalic-webfont.woff2") format("woff2"),
+    font-family: "ralewaymedium_italic";
+    src: url("../fonts/raleway-mediumitalic-webfont.woff2") format("woff2"),
     url("../fonts/raleway-mediumitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewayextralight_italic";
-  src: url("../fonts/raleway-extralightitalic-webfont.woff2") format("woff2"),
+    font-family: "ralewayextralight_italic";
+    src: url("../fonts/raleway-extralightitalic-webfont.woff2") format("woff2"),
     url("../fonts/raleway-extralightitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewayextralight";
-  src: url("../fonts/raleway-extralight-webfont.woff2") format("woff2"),
+    font-family: "ralewayextralight";
+    src: url("../fonts/raleway-extralight-webfont.woff2") format("woff2"),
     url("../fonts/raleway-extralight-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewayextrabold";
-  src: url("../fonts/raleway-extrabold-webfont.woff2") format("woff2"),
+    font-family: "ralewayextrabold";
+    src: url("../fonts/raleway-extrabold-webfont.woff2") format("woff2"),
     url("../fonts/raleway-extrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewayblack_italic";
-  src: url("../fonts/raleway-blackitalic-webfont.woff2") format("woff2"),
+    font-family: "ralewayblack_italic";
+    src: url("../fonts/raleway-blackitalic-webfont.woff2") format("woff2"),
     url("../fonts/raleway-blackitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ralewayblack";
-  src: url("../fonts/raleway-black-webfont.woff2") format("woff2"),
+    font-family: "ralewayblack";
+    src: url("../fonts/raleway-black-webfont.woff2") format("woff2"),
     url("../fonts/raleway-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "ralewayregular", "ralewayblack", "ralewaysemibold_italic",
+    font-family: "ralewayregular", "ralewayblack", "ralewaysemibold_italic",
     "ralewaysemibold", "ralewayregular", "ralewaymedium_italic",
     "ralewayextralight_italic", "ralewayextralight", "ralewayextrabold",
     "ralewayblack_italic";
 }
 
 .content {
-  width: 100%;
-  max-width: 1060px;
-  margin: 0 auto;
-}
-.header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
 }
 
-.slider__container {
-  background: rgb(255, 255, 255); /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(229, 229, 229, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(229, 229, 229, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(229, 229, 229, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<< navigation >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .nav__main {
-  display: flex;
+    display: flex;
 }
+
 .nav__link {
-  text-decoration: none;
-  color: white;
-  font-weight: 900;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
 }
 
 .nav__link__logo {
-  text-decoration: none;
-  color: white;
-  font-weight: 900;
-  padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    padding-left: 10px;
 }
 
 .nav__main__list__item {
-  list-style-type: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
 }
 
 .nav__dropdown {
-  position: absolute;
-  background-color: black;
-  top: 45px;
-  left: calc(50% - 80px);
-  width: 160px;
-  display: none;
-  padding: 10px;
+    position: absolute;
+    background-color: black;
+    top: 45px;
+    left: calc(50% - 80px);
+    width: 160px;
+    display: none;
+    padding: 10px;
 }
 
 .nav__main__list__item:hover .nav__dropdown {
-  display: block;
+    display: block;
 }
 
 .header__span {
-  color: #00c4a2;
+    color: #00c4a2;
 }
 
 .slider__span {
-  color: #00c4a2;
+    color: #00c4a2;
 }
 
 .nav__dropdown::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -10px;
-  left: calc(50% - 10px);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid black;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< slider >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.slider__container {
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(
+            top,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(229, 229, 229, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+            top,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(229, 229, 229, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(229, 229, 229, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0); /* IE6-9 */
+}
+
 .slider {
-  height: 500px;
+    height: 500px;
 }
 
 .slider__image {
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .slider__image__container {
-  flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider__link {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  background-color: #00c4a2;
-  width: 350px;
-  border-radius: 10px;
-  padding: 10px;
-  color: white;
-  font-size: 2rem;
-  margin: 0 auto;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: #00c4a2;
+    width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto;
 }
 
 .slider__article {
-  flex-basis: 50%;
-  padding: 10px;
+    flex-basis: 50%;
+    padding: 10px;
 }
 
 .slider__heading {
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 10px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .slider__description {
-  text-align: center;
-  padding-bottom: 10px;
-  line-height: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 2rem;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .main-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 300px;
 }
 
 .main-section__article1 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
-  background-image: url("../images/box1_img.jpg");
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin: 10px;
-  height: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    background-image: url("../images/box1_img.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
 }
 
 .main-section__heading {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 10px;
-  width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    width: 100%;
 }
 
 .main-section__article2 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
-  background-image: url("../images/box2_img.jpg");
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin: 10px;
-  height: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    background-image: url("../images/box2_img.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
 }
 
 .main-section__article3 {
-  padding: 5px;
-  border: 1px solid lightgrey;
-  flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
-  margin: 10px;
-  height: 200px;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    margin: 10px;
+    height: 200px;
 }
 
 .main-section__description {
-  text-align: left;
-  padding: 5px;
-  line-height: 1.5rem;
+    text-align: left;
+    padding: 5px;
+    line-height: 1.5rem;
 }
 
 .main-section__span {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .main-section__heading:after {
-  content: "";
-  background-color: #00c4a2;
-  display: block;
-  width: 200px;
-  height: 5px;
+    content: "";
+    background-color: #00c4a2;
+    display: block;
+    width: 200px;
+    height: 5px;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< price list >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .price-list__articles {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /* margin: 10px; */
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
 }
 
 .price-list__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #c1c1c1;
-  flex-basis: calc(33.3% - 20px); /* czy dobrze obliczone? */
-  margin: 10px;
-  height: 500px;
-  padding-top: 20px;
-  background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #c1c1c1;
+    flex-basis: 33.33%;
+    margin: 10px;
+    height: 500px;
+    padding-top: 20px;
+    background-color: #f9f9f9;
 }
 
 .price-list__article::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #f9f9f9;
-  border-radius: 50%;
-  border: 2px solid #c1c1c1;
-  position: absolute;
-  top: -15px;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+    position: absolute;
+    top: -10px;
 }
 
 .price-list__article::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  background-color: #c1c1c1;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
 }
 
 .price-list__container {
-  background-color: #f1f0f1;
-  width: 100%;
-  height: 650px;
+    background-color: #f1f0f1;
+    width: 100%;
+    height: 650px;
 }
 
 .price-list__price {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 160px;
-  width: 160px;
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid #c1c1c1;
-  color: #c1c1c1;
-  font-size: 2rem;
-  font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+    color: #c1c1c1;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .price-list__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 50%;
-  padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    padding-top: 10px;
 }
 
 .price-list__heading {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  padding: 30px 5px 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 30px 5px 5px 10px;
 }
 
 .price-list__heading::after {
-  content: "";
-  background-color: #00c4a2;
-  display: block;
-  width: calc(33.3% - 20px);
-  height: 5px;
+    content: "";
+    background-color: #00c4a2;
+    display: block;
+    width: calc(33.3% - 20px);
+    height: 5px;
 }
 
 .price-list__article__heading {
-  padding: 10px;
-  text-transform: uppercase;
-  color: #00c4a2;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #00c4a2;
 }
 
 .price-list__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .price-list__description__option {
-  padding: 10px 70px 10px 70px;
-  font-size: 1.1rem;
+    padding: 10px 70px 10px 70px;
+    font-size: 1.1rem;
 }
 
 .price-list__link {
-  margin-top: auto;
-  padding: 5px;
-  margin-bottom: 20px;
-  background-color: #00c4a2;
-  border-radius: 10px;
-  width: 70%;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.1rem;
+    margin-top: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #00c4a2;
+    border-radius: 10px;
+    width: 70%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
 }
 
 .price-list__description__option:nth-child(2n) {
-  background-color: #f1f0f1;
-  width: 100%;
-  text-align: center;
+    background-color: #f1f0f1;
+    width: 100%;
+    text-align: center;
 }
 
 .price-list__description__option:nth-child(2n + 1) {
-  background-color: #e3e3e3;
-  width: 100%;
-  text-align: center;
+    background-color: #e3e3e3;
+    width: 100%;
+    text-align: center;
 }
 
 .form__container {
-  width: 100%;
-  background-color: #ffffff;
-  height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    height: 400px;
 }
 
+/* <<<< price list hover >>>>> */
+
+.price-list__article:hover { /* aby zmienić dziecko po najechaniu na rodzica */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00c4a2;
+    flex-basis: 33.33%;
+    margin: 10px;
+    height: 500px;
+    padding-top: 20px;
+    background-color: #00c4a2;
+}
+
+.price-list__article:hover .price-list__link {
+    background-color: #ffffff;
+    color: #00c4a2;
+}
+
+.price-list__article:hover .price-list__article__heading {
+    color: #ffffff;
+}
+
+.price-list__article:hover .price-list__price {
+    color: #00c4a2;
+    border: #00c4a2;
+}
+
+.price-list__article:hover::before {
+    border: #00c4a2;
+    background: #00c4a2;
+}
+
+.price-list__article:hover::after {
+    background: #ffffff;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< form >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .form {
-  display: flex;
+    display: flex;
 }
 
 .form__parts {
-  flex-basis: calc(60% - 10px); /*czy dobrze obliczone*/
-  margin: 5px;
+    flex-basis: calc(60% - 10px); /*czy dobrze obliczone? */
+    margin: 5px;
 }
 
 .form__agreement {
-  flex-basis: calc(40% - 10px); /*czy dobrze obliczone*/
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+    flex-basis: calc(40% - 10px); /*czy dobrze obliczone? */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .form__parts__heading {
-  text-transform: uppercase;
-  padding: 5px;
+    text-transform: uppercase;
+    padding: 5px;
 }
 
 .form__parts__heading::after {
-  content: "";
-  background-color: #00c4a2;
-  display: block;
-  width: calc(60% - 20px); /*czy dobrze obliczone?? */
-  height: 5px;
+    content: "";
+    background-color: #00c4a2;
+    display: block;
+    width: calc(60% - 20px); /*czy dobrze obliczone? */
+    height: 5px;
 }
 
 .form__parts__input {
-  width: 100%;
-  background-color: #ffffff;
-  color: #757575;
-  border: 1px solid #00c4a2;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 5px;
-  font-size: 1.5rem;
-  padding: 14px 20px;
-  font-family: "ralewayregular", "ralewayblack";
-}
-
-.form__agreement__statement {
-  padding: 5px 5px 0 5px;
-  color: #757575;
+    width: 100%;
+    background-color: #ffffff;
+    color: #757575;
+    border: 1px solid #00c4a2;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1.5rem;
+    padding: 14px 20px;
+    font-family: "ralewayregular", "ralewayblack";
 }
 
 .form__agreement__picture {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .form__agreement__link {
-  text-decoration: none;
-  width: 100%;
-  background-color: #00c4a2;
-  border-radius: 10px;
-  height: 50px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  padding-top: 5px; /* czy da się ładniej obliczyć? próbowałam calc(50%-25px) */
+    text-decoration: none;
+    width: 100%;
+    background-color: #00c4a2;
+    border-radius: 10px;
+    height: 50px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 5px; /* czy da się ładniej obliczyć? próbowałam calc(50%-25px) */
 }
 
-.form__agreement__agreement__img {
-  float: left;
+/*.form__agreement__checkbox__input {*/
+    /*position: relative;*/
+    /*z-index: -9999;*/
+/*}*/
+
+/*.form__agreement__checkbox span {*/
+    /*background: #ffffff;*/
+    /*border: 2px solid #00c4a2;*/
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*display: block;*/
+/*}*/
+
+/*.form__agreement__checkbox__input:checked + span {*/
+    /*background: url("../images/form_ok.jpg")*/
 }
 
-.clearfix:after {
-  content: "";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .footer__container {
-  width: 100%;
-  margin: 10px;
-  background-color: #ffffff;
+    width: 100%;
+    margin: 10px;
+    background-color: #ffffff;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
 }
 
 .footer__copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer__copyright__statemnet {
-  color: #757575;
+    color: #757575;
 }
 
 .footer__media {
-  display: flex;
-  /* justify-content: space-between; dlaczego nie działa */
-  align-items: center;
+    display: flex;
+    /* justify-content: space-between; dlaczego nie działa */
+    align-items: center;
 }
 
 .fa-pinterest {
-  font-size: 2rem;
-  padding: 5px;
-  color: #cb2027;
+    font-size: 2rem;
+    padding: 5px;
+    color: #cb2027;
 }
 
 .fa-vimeo {
-  font-size: 2rem;
-  padding: 5px;
-  color: #55acee;
+    font-size: 2rem;
+    padding: 5px;
+    color: #55acee;
 }
 
 .fa-twitter-square {
-  font-size: 2rem;
-  padding: 5px;
-  color: #55acee;
+    font-size: 2rem;
+    padding: 5px;
+    color: #55acee;
 }
 
 .fa-flickr {
-  font-size: 2rem;
-  padding: 5px;
-  color: #ec519d;
+    font-size: 2rem;
+    padding: 5px;
+    color: #ec519d;
 }
 
 .footer__logo {
-  color: #757575;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    color: #757575;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer__logo__span {
-  font-weight: 700;
+    font-weight: 700;
 }
