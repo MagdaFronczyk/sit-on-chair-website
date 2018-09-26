@@ -552,21 +552,56 @@ body {
     padding-top: 5px; /* czy da się ładniej obliczyć? próbowałam calc(50%-25px) */
 }
 
-/*.form__agreement__checkbox__input {*/
-    /*position: relative;*/
-    /*z-index: -9999;*/
-/*}*/
+/* <<<<<<<<<<<<<<< checkbox >>>>>>>>>>>> */
 
-/*.form__agreement__checkbox span {*/
-    /*background: #ffffff;*/
-    /*border: 2px solid #00c4a2;*/
-    /*height: 30px;*/
-    /*width: 30px;*/
-    /*display: block;*/
-/*}*/
+.form__checkbox{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
-/*.form__agreement__checkbox__input:checked + span {*/
-    /*background: url("../images/form_ok.jpg")*/
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    flex-basis: 50%;
+    top: -15px;
+    left: -80px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid #00c4a2;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form__checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.form__checkbox .checkmark:after {
+    left: 11px;
+    top: 2px;
+    width: 15px;
+    height: 30px;
+    border: solid #00c4a2;
+    border-width: 0 10px 10px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
