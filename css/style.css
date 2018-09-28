@@ -481,7 +481,7 @@ body {
 }
 
 .price-list__article:hover::before {
-    border: #00c4a2;
+    border-color: #00c4a2;
     background: #00c4a2;
 }
 
@@ -554,8 +554,14 @@ body {
 
 /* <<<<<<<<<<<<<<< checkbox >>>>>>>>>>>> */
 
-.form__checkbox{
+.form__agreement__checkbox {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form__checkbox{
     position: relative;
     cursor: pointer;
     font-size: 1rem;
@@ -572,14 +578,13 @@ body {
 }
 
 .checkmark {
-    position: absolute;
     flex-basis: 50%;
-    top: -15px;
-    left: -80px;
     height: 50px;
     width: 50px;
     background-color: white;
     border: 1px solid #00c4a2;
+    display: block;
+    margin-right: 5px;
 }
 
 .checkmark:after {
