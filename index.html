@@ -50,17 +50,23 @@
 
 <section class="slider__container">
     <section class="slider content">
-        <figure class="slider__image__container">
-            <img class="slider__image" src="images/black_chair.png" alt="">
-        </figure>
+        <ul class="slider__image__container">
+            <li class="slider-slide slider-slide-active">
+                <img class="slider__image" src="images/black_chair.png" alt="">
+            </li>
+            <li class="slider-slide">
+                <img class="slider__image" src="images/orange_chair.png" alt="">
+            </li>
+        </ul>
         <article class="slider__article">
             <h1 class="slider__heading">Sit <span class="slider__span">On</span> Your <span>Chair</span></h1>
             <p class="slider__description">Candy canes gummi bears marzipan sweet roll apple pie. Jelly beans
                 halvah chocolate cake danish candy canes. Cake bonbon carrot cake cake gummi bears bear claw
-                marzipan dessert gingerbread. Gingerbread marzipan candy canes macaroon carrot cake. Candy canes
-                bear claw tootsie roll cheesecake caramels wafer muffin cheesecake. </p>
+                heesecake. </p>
             <a class="slider__link" href="">Zobacz więcej</a>
         </article>
+        <button class="slider-prev"><i class="fas fa-angle-left"></i></button>
+        <button class="slider-next"><i class="fas fa-angle-right"></i></button>
     </section>
 </section>
 
@@ -206,6 +212,7 @@
 </section>
 
 <!-- end of footer-->
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
