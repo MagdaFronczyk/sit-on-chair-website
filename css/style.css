@@ -200,8 +200,10 @@ body {
 
 .slider__image__container {
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    position: relative;
 }
 
 .slider__link {
@@ -259,10 +261,7 @@ body {
 
 .slider-slide {
     position: absolute;
-    height:100%;
-    width: 100%;
     opacity: 0;
-    top: calc( 50% - 160px);
 }
 
 .slider-slide-active {
