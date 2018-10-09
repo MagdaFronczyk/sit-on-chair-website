@@ -6,37 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var navLinks = document.querySelectorAll(".nav__link");
 
     for (var el of navLinks) {
-        el.addEventListener("mouseover", function (event) {
+        el.addEventListener("click", function (event) {
+
+            event.preventDefault();
 
             var dropdown = this.nextElementSibling;
 
             if (dropdown !== null) {
 
                 if (dropdown.style.display === "none" || dropdown.style.display === "") {
-                    dropdown.style.display = "block"
-                } else { // czy ten warunek potrzebny? Działa bez niego
+                    dropdown.style.display = "block";
+                } else {
                     dropdown.style.display = "none"
                 }
 
             }
 
         });
-
-        el.addEventListener("mouseout", function (event) {
-
-            var dropdown = this.nextElementSibling;
-
-            if (dropdown !== null) {
-
-                if (dropdown.style.display === "block" || dropdown.style.display === "") {
-                    dropdown.style.display = "none"
-                } else { // czy ten warunek potrzebny? Działa bez niego
-                    dropdown.style.display = "block"
-                }
-
-            }
-
-        })
     }
 
 

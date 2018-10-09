@@ -143,10 +143,6 @@ body {
     padding: 10px;
 }
 
-/*.nav__main__list__item:hover .nav__dropdown {*/
-    /*display: block;*/
-/*}*/
-
 .header__span {
     color: #00c4a2;
 }
@@ -287,7 +283,7 @@ body {
 .main-section__article1 {
     padding-top: 5px;
     padding-bottom: 5px;
-    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    flex-basis: calc(33% - 20px);
     background-image: url("../images/box1_img.jpg");
     background-size: cover;
     background-position: center center;
@@ -308,7 +304,7 @@ body {
 .main-section__article2 {
     padding-top: 5px;
     padding-bottom: 5px;
-    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    flex-basis: calc(33% - 20px);
     background-image: url("../images/box2_img.jpg");
     background-size: cover;
     background-position: center center;
@@ -322,7 +318,7 @@ body {
 .main-section__article3 {
     padding: 5px;
     border: 1px solid lightgrey;
-    flex-basis: calc(33% - 20px); /* Czy to dobrze obliczone?*/
+    flex-basis: calc(33% - 20px);
     margin: 10px;
     height: 200px;
 }
@@ -529,12 +525,12 @@ body {
 }
 
 .form__parts {
-    flex-basis: calc(60% - 10px); /*czy dobrze obliczone? */
+    flex-basis: calc(60% - 10px);
     margin: 5px;
 }
 
 .form__agreement {
-    flex-basis: calc(40% - 10px); /*czy dobrze obliczone? */
+    flex-basis: calc(40% - 10px);
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -551,7 +547,7 @@ body {
     content: "";
     background-color: #00c4a2;
     display: block;
-    width: calc(60% - 20px); /*czy dobrze obliczone? */
+    width: calc(60% - 20px);
     height: 5px;
 }
 
@@ -582,7 +578,7 @@ body {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    padding-top: 5px; /* czy da się ładniej obliczyć? próbowałam calc(50%-25px) */
+    padding-top: 5px;
 }
 
 /* <<<<<<<<<<<<<<< checkbox >>>>>>>>>>>> */
@@ -668,7 +664,6 @@ body {
 
 .footer__media {
     display: flex;
-    /* justify-content: space-between; dlaczego nie działa */
     align-items: center;
 }
 
